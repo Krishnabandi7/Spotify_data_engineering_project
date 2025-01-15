@@ -56,3 +56,6 @@ Import tables and build basic visualizations, such as:
 Bar charts showing track counts by album.
 Pie charts visualizing artist contribution.
 Share insights via dashboards.
+
+![image](https://github.com/user-attachments/assets/e57490d9-18dd-4170-91c7-770c8996cf15)
+
