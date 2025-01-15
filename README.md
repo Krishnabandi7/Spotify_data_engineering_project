@@ -1,5 +1,6 @@
 # Spotify_data_engineering_project
 
+Archetecture Diagram
 ![Screenshot 2025-01-15 144920](https://github.com/user-attachments/assets/b3820428-f0b2-438a-9fc7-f4fdeb8177b4)
 
 
@@ -20,31 +21,35 @@ Name the role (e.g., spotify-music-role) and save it.
 3. Create an ETL Job (Visual ETL) in AWS Glue:
 Navigate to the AWS Glue Studio.
 Create a new visual ETL job:
+![Screenshot 2025-01-15 150703](https://github.com/user-attachments/assets/7a9ebe8f-b209-454d-b8a4-de9548c42307)
+
 Add S3 bucket (staging) as the source.
 Perform transformations (e.g., joining, filtering, dropping fields).
 Set the S3 bucket (warehouse) as the target.
 Assign the IAM Role created earlier.
 Save and run the job.
-4. Create an AWS Glue Crawler:
+5. Create an AWS Glue Crawler:
 Go to the AWS Glue Console and create a new crawler:
 Data source: S3 bucket (warehouse).
 IAM Role: Use the spotify-music-role.
 Run the crawler to populate the schema in the Glue Data Catalog.
-5. Create a Database (Spotify):
+6. Create a Database (Spotify):
 In the AWS Glue Console, create a new database named spotify.
 Associate this database with the crawler during configuration.
 Ensure permissions are set for the IAM Role to access the database.
-6. Run the Glue Crawler:
+7. Run the Glue Crawler:
 Start the crawler to scan the data and populate the spotify database.
 Verify that the tables and metadata are added to the Glue Data Catalog.
-7. Set Up Amazon Athena:
+8. Set Up Amazon Athena:
 Navigate to Amazon Athena.
 Configure a query result location by specifying a new S3 bucket (e.g., spotify-athena-results).
 Use the spotify database to run SQL queries like:
 SELECT * FROM tracks LIMIT 10;
 SELECT album, COUNT(*) FROM tracks GROUP BY album;
 Verify that query results are saved to the specified S3 bucket.
-8. Create Visualizations in QuickSight:
+9. Create Visualizations in QuickSight:
+   ![Screenshot 2025-01-15 151433](https://github.com/user-attachments/assets/b559065a-e480-414a-97db-202d59d1fdfe)
+
 Open Amazon QuickSight and create a new dataset.
 Connect QuickSight to Athena and select the spotify database.
 Import tables and build basic visualizations, such as:
