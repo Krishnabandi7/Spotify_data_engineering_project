@@ -59,3 +59,13 @@ Share insights via dashboards.
 
 ![image](https://github.com/user-attachments/assets/e57490d9-18dd-4170-91c7-770c8996cf15)
 
+
+![image](https://github.com/user-attachments/assets/00f98f37-b870-48e6-b809-f575bfb7b5e0)
+
+
+![image](https://github.com/user-attachments/assets/d5a0715b-b5a7-442e-a190-cf2716239bf7)
+
+![image](https://github.com/user-attachments/assets/82aefcdf-9988-4bc8-a147-5c154373cf4d)
+
+
+
